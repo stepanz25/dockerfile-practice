@@ -4,7 +4,7 @@
 #
 FROM debian:stable
 
-#RUN apt-get update
+RUN apt-get update
 
 # Creating a Dockerfile
 #FROM jupyter/scipy-notebook
