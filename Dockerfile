@@ -2,8 +2,8 @@
 # Last update: December 8, 2022
 # Individual Assignment ## 4
 
-FROM jupyter/minimal-notebook
 
-RUN conda update conda
+RUN apt-get update --yes
 
-RUN conda install docopt
+RUN mamba install --quiet --yes \
+    'altair' 
