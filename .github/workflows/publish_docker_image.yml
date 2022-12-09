@@ -33,7 +33,7 @@ jobs:
         draft: false
         prerelease: false
     - name: Publish to Registry
-      uses: elgohr/Publish-Docker-GitHub-Action@v5
+      uses: docker/build-push-action@v2
       with:
         name: stepanz/dockerfile-practice # CHANGE THIS to your DockerHub username and repository!
         username: ${{ secrets.DOCKER_USERNAME }} # you need to add your Docker username to this GitHub repo as a secret
