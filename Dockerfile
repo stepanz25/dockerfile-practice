@@ -2,11 +2,8 @@
 # Last update: December 8, 2022
 # Individual Assignment ## 4
 
-FROM jupyter/scipy-notebook
+FROM jupyter/minimal-notebook
 
-RUN apt-get update
+RUN conda update conda
 
-# Creating a Dockerfile
-RUN mamba install --quiet --yes \
-   'r-base' \
-   'r-ggplot2'
+RUN conda install docopt
