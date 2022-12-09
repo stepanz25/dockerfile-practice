@@ -4,6 +4,4 @@
 
 FROM jupyter/scipy-notebook
 
-RUN apt-get update
-
 RUN pip install altair==4.1.0
